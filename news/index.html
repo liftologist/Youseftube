@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Yousefs Winning: Good News Archive · YousefTube</title>
+<meta name="description" content="A daily archive of good news about people named Yousef, Youssef, Yusuf and every other spelling. Positive stories only, each linked to its source.">
+<link rel="canonical" href="https://youseftube.com/news/">
+<meta property="og:title" content="Yousefs Winning: Good News Archive · YousefTube">
+<meta property="og:description" content="A daily archive of good news about people named Yousef, Youssef, Yusuf and every other spelling. Positive stories only, each linked to its source.">
+<meta property="og:image" content="https://youseftube.com/logo.png">
+<link rel="icon" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Caveat:wght@700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<header>
+  <div class="wrap mast">
+    <a class="logo" href="/" aria-label="YousefTube home"><img class="logo-img" src="/logo.png" alt="YousefTube.com"></a>
+    <nav aria-label="Sections">
+      <a href="/news/">Yousefs Winning</a>
+      <a href="/hall-of-fame/">Hall of Fame</a>
+      <a href="/names/">Name Guide</a>
+      <a href="/fun-facts/">Fun Facts</a>
+      <a href="/#quiz">Quiz</a>
+    </nav>
+    <a class="btn" href="/#join">Subscribe</a>
+  </div>
+</header>
+<main class="wrap page">
+<div class="crumbs"><a href="/">Home</a> / Yousefs Winning</div>
+<h1>Yousefs Winning</h1>
+<p class="tag">Good news about Yousefs of every spelling, gathered daily. Each story links to its original source. Bad news is someone else's beat.</p>
+<div class="wire"><div class="stories" id="stories"><p>Loading the latest wins…</p></div>
+<div class="side"><div class="sponsor"><div class="eyebrow">Got a Yousef win?</div><p>Send it to tips@youseftube.com and we may feature it.</p></div><div class="ad box" role="note">Advertisement · 300 × 250</div></div></div>
+<p class="fine" id="updated"></p>
+<script>
+fetch('/data/news.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
+  const esc=t=>String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  document.getElementById('stories').innerHTML=d.stories.map(s=>`<article class="story"><div class="w">${esc(s.icon||'W')}</div><div><h3>${esc(s.title)}</h3><p>${esc(s.blurb)}</p><div class="meta"><span>${esc(s.category)}</span><span>${esc(s.date)}</span><a href="${esc(s.url)}" target="_blank" rel="noopener">Source ↗</a></div></div></article>`).join('');
+  if(d.updated)document.getElementById('updated').textContent='Last updated '+d.updated;
+}).catch(()=>{document.getElementById('stories').innerHTML='<p>The news desk is on a coffee break. Try again shortly.</p>'});
+</script>
+</main>
+<footer>
+  <div class="wrap cols">
+    <div>
+      <a class="logo" href="/" aria-label="YousefTube home"><img class="logo-img" src="/logo.png" alt="YousefTube.com"></a>
+      <p>YousefTube is a fan site and a work of affectionate satire. Not affiliated with YouTube, Google, or any of the excellent Yousefs mentioned. News summaries link to their original sources.</p>
+    </div>
+    <div><h4>Explore</h4><ul><li><a href="/news/">Yousefs Winning</a></li><li><a href="/hall-of-fame/">Hall of Fame</a></li><li><a href="/names/">Name Guide</a></li><li><a href="/fun-facts/">Fun Facts</a></li></ul></div>
+    <div><h4>About</h4><ul><li><a href="/about/">About YousefTube</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div>
+  </div>
+</footer>
+</body>
+</html>
