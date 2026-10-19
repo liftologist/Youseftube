@@ -17,7 +17,7 @@ NAMES = [
       ("Yousef in the United States", "Yousef is the most popular spelling of the name among American newborns. U.S. Social Security data shows 331 baby boys named Yousef in 2024, the highest count on record, putting it around #766 nationally. It has been recorded every year since 1970, and its births have grown nearly every decade since."),
       ("Yousef as a surname", "Yousef is also a family name across the Arab world and among Assyrian and Chaldean Christians, for whom it comes from the Syriac form of Joseph. U.S. Census data shows the surname Yousef growing by about 70% between 2000 and 2010."),
     ],
-    famous=["Yousef Erakat, early YouTube comedy creator", "Many, many uncles"],
+    famous=["Many, many uncles"],
     fun="331 American Yousefs born in 2024 means roughly one new Yousef every 26 hours. The movement is growing."),
   dict(slug="youssef", name="Youssef", lang="Arabic (French-style spelling)", tagline="Two S's. Zero apologies.",
     meaning='Youssef is the French-influenced spelling of Arabic <i>Yūsuf</i>, Joseph. The double <i>s</i> is there for a reason: in French, a single <i>s</i> between vowels sounds like a <i>z</i>, so "Yousef" would come out as "Yoozef." The second S keeps it crisp.',
@@ -179,12 +179,6 @@ HALL = [
       "In 1997, at the 50th Cannes Film Festival, he received a special lifetime achievement prize. He also helped launch the careers of actors including Omar Sharif.",
       "Directed by Youssef. Obviously.",
     ], quip="Directed by Youssef. Obviously."),
-  dict(slug="yousef-erakat", name="Yousef Erakat", role="Internet · United States", color="#D7263D", mono="▶",
-    paras=[
-      "Yousef Erakat, known online as FouseyTube, is a Palestinian-American content creator who rose to prominence in the early 2010s as part of the first big wave of YouTube comedy channels.",
-      "His prank videos, sketches and vlogs drew millions of subscribers and helped define what an independent online entertainer could be before the term \"influencer\" was in common use.",
-      "We include him here for one simple reason: before this website existed, he had already proven that \"Yousef\" and \"YouTube\" belong in the same sentence.",
-    ], quip="The original You-sef-Tuber."),
 ]
 
 FACTS = [
