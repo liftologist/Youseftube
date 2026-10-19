@@ -82,6 +82,7 @@ def page(path, title, desc, body, extra_head=""):
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Caveat:wght@700&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 <link rel="stylesheet" href="/assets/wall.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3863850520564064" crossorigin="anonymous"></script>
 {extra_head}</head>
 <body>
 {HEADER}
