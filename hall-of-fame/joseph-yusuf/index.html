@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Caveat:wght@700&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/wall.css">
 </head>
 <body>
 <header>
@@ -22,10 +23,10 @@
       <a href="/news/">Yousefs Winning</a>
       <a href="/hall-of-fame/">Hall of Fame</a>
       <a href="/names/">Name Guide</a>
+      <a href="/wall/">The Wall</a>
       <a href="/fun-facts/">Fun Facts</a>
-      <a href="/#quiz">Quiz</a>
     </nav>
-    <a class="btn" href="/#join">Subscribe</a>
+    <a class="btn" href="#newsletter">Subscribe</a>
   </div>
 </header>
 <main class="wrap page">
@@ -44,15 +45,21 @@
   </aside>
 </div>
 </main>
+<section class="newsband" id="newsletter"><div class="wrap in">
+  <div><div class="eyebrow">The Yousefsletter · every Friday</div><h2>Get the Yousef Report</h2><p class="fine">One email a week: the best Yousef wins, a new Hall of Fame inductee, and some puns. Unsubscribe anytime.</p></div>
+  <form class="signup" novalidate data-source="newsband"><input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><label class="hp" for="nb-email">Email</label><input id="nb-email" type="email" placeholder="you@example.com" autocomplete="email" required><button class="btn" type="submit">Subscribe</button></form>
+</div></section>
 <footer>
   <div class="wrap cols">
     <div>
       <a class="logo" href="/" aria-label="YousefTube home"><img class="logo-img" src="/logo.png" alt="YousefTube.com"></a>
       <p>YousefTube is a fan site and a work of affectionate satire. Not affiliated with YouTube, Google, or any of the excellent Yousefs mentioned. News summaries link to their original sources.</p>
     </div>
-    <div><h4>Explore</h4><ul><li><a href="/news/">Yousefs Winning</a></li><li><a href="/hall-of-fame/">Hall of Fame</a></li><li><a href="/names/">Name Guide</a></li><li><a href="/fun-facts/">Fun Facts</a></li></ul></div>
+    <div><h4>Explore</h4><ul><li><a href="/news/">Yousefs Winning</a></li><li><a href="/hall-of-fame/">Hall of Fame</a></li><li><a href="/names/">Name Guide</a></li><li><a href="/fun-facts/">Fun Facts</a></li><li><a href="/wall/">The Yousef Wall</a></li></ul></div>
     <div><h4>About</h4><ul><li><a href="/about/">About YousefTube</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div>
   </div>
 </footer>
+<div class="toast" id="toast" hidden></div>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Yousef Wall · YousefTube</title>
+<meta name="description" content="Check in as a fellow Yousef, send appreciation to a Yousef in your life, or leave a message on the Yousef Wall.">
+<link rel="canonical" href="https://youseftube.com/wall/">
+<meta property="og:title" content="The Yousef Wall · YousefTube">
+<meta property="og:description" content="Check in as a fellow Yousef, send appreciation to a Yousef in your life, or leave a message on the Yousef Wall.">
+<meta property="og:image" content="https://youseftube.com/logo.png">
+<link rel="icon" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Caveat:wght@700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/wall.css">
+</head>
+<body>
+<header>
+  <div class="wrap mast">
+    <a class="logo" href="/" aria-label="YousefTube home"><img class="logo-img" src="/logo.png" alt="YousefTube.com"></a>
+    <nav aria-label="Sections">
+      <a href="/news/">Yousefs Winning</a>
+      <a href="/hall-of-fame/">Hall of Fame</a>
+      <a href="/names/">Name Guide</a>
+      <a href="/wall/">The Wall</a>
+      <a href="/fun-facts/">Fun Facts</a>
+    </nav>
+    <a class="btn" href="#newsletter">Subscribe</a>
+  </div>
+</header>
+<main class="wrap page">
+<div class="crumbs"><a href="/">Home</a> / The Yousef Wall</div>
+<div class="eyebrow"><span class="wall-count" id="wall-count">0</span> posts and counting</div>
+<h1>The Yousef Wall</h1>
+<p class="tag">Check in as a fellow Yousef, send love to a Yousef in your life, or just say hi. No account needed. Be kind; this wall is for good vibes only.</p>
+<form class="wall-form" id="wall-form" novalidate>
+  <span id="post"></span>
+  <fieldset class="kinds"><legend>What are you posting?</legend>
+    <label><input type="radio" name="kind" value="checkin" checked> 👋 Checking in as a Yousef</label>
+    <label><input type="radio" name="kind" value="appreciation"> 💛 Appreciating a Yousef</label>
+    <label><input type="radio" name="kind" value="message"> ✉️ Message to a Yousef</label>
+  </fieldset>
+  <div class="row">
+    <label class="f" for="wall-name">Your name<input id="wall-name" type="text" maxlength="40" placeholder="Yousef" autocomplete="given-name"></label>
+    <label class="f" for="wall-place">Where you're from (optional)<input id="wall-place" type="text" maxlength="40" placeholder="San Antonio, TX"></label>
+  </div>
+  <label class="f" for="wall-body">Your message<textarea id="wall-body" maxlength="280" placeholder="Proud Yousef since 1987. Two S's, no regrets."></textarea></label>
+  <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between">
+    <span class="fine" id="wall-chars">0 / 280</span>
+    <button class="btn" type="submit">Post to the wall</button>
+  </div>
+  <p class="fine" style="margin:0">Posts are public. First names only, please, and no links, phone numbers or private details. We remove anything unkind.</p>
+</form>
+<div class="wall-grid" id="wall-list" data-limit="100">
+  <div class="wall-empty">The wall is fresh paint. Be the first Yousef to sign it.</div>
+</div>
+<div class="ad leader" role="note">Advertisement</div>
+</main>
+<section class="newsband" id="newsletter"><div class="wrap in">
+  <div><div class="eyebrow">The Yousefsletter · every Friday</div><h2>Get the Yousef Report</h2><p class="fine">One email a week: the best Yousef wins, a new Hall of Fame inductee, and some puns. Unsubscribe anytime.</p></div>
+  <form class="signup" novalidate data-source="newsband"><input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"><label class="hp" for="nb-email">Email</label><input id="nb-email" type="email" placeholder="you@example.com" autocomplete="email" required><button class="btn" type="submit">Subscribe</button></form>
+</div></section>
+<footer>
+  <div class="wrap cols">
+    <div>
+      <a class="logo" href="/" aria-label="YousefTube home"><img class="logo-img" src="/logo.png" alt="YousefTube.com"></a>
+      <p>YousefTube is a fan site and a work of affectionate satire. Not affiliated with YouTube, Google, or any of the excellent Yousefs mentioned. News summaries link to their original sources.</p>
+    </div>
+    <div><h4>Explore</h4><ul><li><a href="/news/">Yousefs Winning</a></li><li><a href="/hall-of-fame/">Hall of Fame</a></li><li><a href="/names/">Name Guide</a></li><li><a href="/fun-facts/">Fun Facts</a></li><li><a href="/wall/">The Yousef Wall</a></li></ul></div>
+    <div><h4>About</h4><ul><li><a href="/about/">About YousefTube</a></li><li><a href="/contact/">Contact</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div>
+  </div>
+</footer>
+<div class="toast" id="toast" hidden></div>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
