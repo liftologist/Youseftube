@@ -113,7 +113,7 @@ urls.append(page("names/index.html", "The Yousef Name Guide · YousefTube",
 <p class="tag">One Hebrew name, <i>Yosef</i>, "he will add," travelled to nearly every language on Earth. Here is every branch of the family, with its meaning, history, popularity and best-known bearers.</p>
 <div class="linkgrid">{cards}</div>
 <div class="callout prose"><span class="eyebrow">Why so many spellings?</span>Two routes did most of the work. Through Greek and Latin, Yosef became Joseph, José, Giuseppe and Josef. Through Arabic, it became Yūsuf, and then Yousef, Youssef, Yusuf, Youcef and Youssouf depending on which alphabet habits a country picked up along the way.</div>
-<div class="ad leader" role="note">Advertisement</div>"""))
+"""))
 for i, n in enumerate(NAMES):
     others = [m for m in NAMES if m is not n][:6]
     sections = "".join(f"<h2>{h}</h2><p>{p}</p>" for h, p in n["body"])
@@ -133,7 +133,6 @@ for i, n in enumerate(NAMES):
   </article>
   <aside class="side">
     <div class="sponsor"><div class="eyebrow">Famous bearers</div><ul>{famous}</ul></div>
-    <div class="ad box" role="note">Advertisement · 300 × 250</div>
     <div class="sponsor"><div class="eyebrow">More spellings</div><ul>{rel}</ul></div>
   </aside>
 </div>"""))
@@ -146,7 +145,7 @@ urls.append(page("hall-of-fame/index.html", "The Yousef Hall of Fame · YousefTu
 <h1>The Yousef Hall of Fame</h1>
 <p class="tag">Inducted for excellence and/or vibes. Three thousand years of Yousefs, abridged.</p>
 <div class="hof">{hcards}</div>
-<div class="ad leader" role="note">Advertisement</div>"""))
+"""))
 for h in HALL:
     paras = "".join(f"<p>{p}</p>" for p in h["paras"])
     others = "".join(f'<li><a href="/hall-of-fame/{o["slug"]}/">{o["name"]}</a></li>' for o in HALL if o is not h)
@@ -162,7 +161,6 @@ for h in HALL:
     {paras}
   </article>
   <aside class="side">
-    <div class="ad box" role="note">Advertisement · 300 × 250</div>
     <div class="sponsor"><div class="eyebrow">More inductees</div><ul>{others}</ul></div>
   </aside>
 </div>"""))
@@ -174,7 +172,7 @@ urls.append(page("news/index.html", "Yousefs Winning: Good News Archive · Youse
 <h1>Yousefs Winning</h1>
 <p class="tag">Good news about Yousefs of every spelling, gathered daily. Each story links to its original source. Bad news is someone else's beat.</p>
 <div class="wire"><div class="stories" id="stories"><p>Loading the latest wins…</p></div>
-<div class="side"><div class="sponsor"><div class="eyebrow">Got a Yousef win?</div><p>Send it to tips@youseftube.com and we may feature it.</p></div><div class="ad box" role="note">Advertisement · 300 × 250</div></div></div>
+<div class="side"><div class="sponsor"><div class="eyebrow">Got a Yousef win?</div><p>Send it to tips@youseftube.com and we may feature it.</p></div></div></div>
 <p class="fine" id="updated"></p>
 <script>
 fetch('/data/news.json',{cache:'no-store'}).then(r=>r.json()).then(d=>{
@@ -192,7 +190,7 @@ urls.append(page("fun-facts/index.html", "Fun Yousef Facts · YousefTube",
 <h1>Fun Yousef Facts</h1>
 <p class="tag">Shareable, verified, mildly smug. Perfect for dinner parties attended by at least one Yousef.</p>
 <div class="facts">{facts}</div>
-<div class="ad leader" role="note" style="margin-top:28px">Advertisement</div>"""))
+"""))
 
 
 # ---- The Yousef Wall
@@ -224,7 +222,7 @@ urls.append(page("wall/index.html", "The Yousef Wall · YousefTube",
 <div class="wall-grid" id="wall-list" data-limit="100">
   <div class="wall-empty">The wall is fresh paint. Be the first Yousef to sign it.</div>
 </div>
-<div class="ad leader" role="note">Advertisement</div>"""))
+"""))
 
 # ---- About & Contact
 urls.append(page("about/index.html", "About YousefTube",
