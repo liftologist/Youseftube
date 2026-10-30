@@ -14,3 +14,6 @@ Logo: search for `LOGO SLOT` in index.html to swap in an image.
 - Export subscribers / moderate posts in Cloudflare → D1 → youseftube → Console, e.g.
   `SELECT email, created FROM subscribers ORDER BY id;`
   `UPDATE messages SET hidden = 1 WHERE id = 123;`
+
+## Editing the news feed (Pages CMS)
+Log in at https://app.pagescms.org with GitHub, open `liftologist/Youseftube`, then "Yousefs Winning (news feed)". Add new stories at the top; saving commits to `main` and Cloudflare Pages redeploys in a minute or two. Config: `.pages.yml`.

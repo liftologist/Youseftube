@@ -1,0 +1,43 @@
+# Pages CMS config — edit the "Yousefs Winning" feed at https://app.pagescms.org
+content:
+  - name: news
+    label: Yousefs Winning (news feed)
+    type: file
+    path: data/news.json
+    format: json
+    fields:
+      - name: updated
+        label: Last updated (YYYY-MM-DD)
+        type: string
+        required: true
+      - name: stories
+        label: Stories (newest first — add new ones at the top)
+        type: object
+        list: true
+        fields:
+          - name: icon
+            label: Icon (one emoji, e.g. ⚽ 🎬 🏆)
+            type: string
+            required: true
+          - name: title
+            label: Headline
+            type: string
+            required: true
+          - name: blurb
+            label: Blurb (1–2 factual sentences + a light Yousef pun)
+            type: text
+            required: true
+          - name: category
+            label: Category
+            type: select
+            required: true
+            options:
+              values: [Sports, Film, Music, Business, Civic, Culture]
+          - name: date
+            label: Date (e.g. Oct 2026)
+            type: string
+            required: true
+          - name: url
+            label: Source link (public news story or official announcement)
+            type: string
+            required: true
